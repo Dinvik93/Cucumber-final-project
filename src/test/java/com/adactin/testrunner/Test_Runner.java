@@ -17,7 +17,7 @@ public class Test_Runner {
 	
     @BeforeClass
 	public static void set_Up() {
-	driver =	 Base_Class.browserlaunch("chrome");
+driver = Base_Class.browserlaunch("chrome");
 		
 
 	}
