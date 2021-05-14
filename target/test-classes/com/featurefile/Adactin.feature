@@ -1,10 +1,18 @@
 Feature: Hotel Booking In Adactin App
 
-Scenario: Logging In
+Scenario Outline: Logging In
     Given user Launch The Application
-    When user Enter The Username In Username Field
-    And user Enter The Password In Password Field
+    When user Enter The "<Username>" In Username Field
+    And user Enter The "<Password>" In Password Field
     Then user Click On The Login Button And It Navigates To Search Hotel Page
+    
+    Examples:
+    |Username|Password|
+    |aaa|123|
+    |bbb|123|
+    |Dineshvikash|Dinvik@93|
+    
+    
 
 Scenario: Searching For Hotel
     When user Select The Hotel Location In Location Field 
